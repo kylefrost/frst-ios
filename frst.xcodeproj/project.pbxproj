@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272481DB1B8391770050E5EF /* Pods_frst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272481D71B8391770050E5EF /* Pods_frst.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		272481DC1B8391770050E5EF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272481D81B8391770050E5EF /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		272481E01B83955A0050E5EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2768DF5C1B823D8000F657DF /* Assets.xcassets */; };
 		2749F3361B83632F00435A1B /* GetURL.js in Resources */ = {isa = PBXBuildFile; fileRef = 2749F3351B83632F00435A1B /* GetURL.js */; };
 		2768DF561B823D8000F657DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768DF551B823D8000F657DF /* AppDelegate.swift */; };
 		2768DF581B823D8000F657DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768DF571B823D8000F657DF /* ViewController.swift */; };
@@ -46,6 +49,10 @@
 
 /* Begin PBXFileReference section */
 		1EDDFA7E8E8E4B6E46FE6470 /* Pods_frst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_frst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		272481D61B8391770050E5EF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		272481D71B8391770050E5EF /* Pods_frst.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_frst.framework; path = "Pods/../build/Debug-iphoneos/Pods_frst.framework"; sourceTree = "<group>"; };
+		272481D81B8391770050E5EF /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
+		272481D91B8391770050E5EF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		2749F3341B82A06C00435A1B /* frst.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = frst.entitlements; sourceTree = "<group>"; };
 		2749F3351B83632F00435A1B /* GetURL.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = GetURL.js; sourceTree = "<group>"; };
 		2768DF521B823D8000F657DF /* frst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frst.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272481DB1B8391770050E5EF /* Pods_frst.framework in Frameworks */,
+				272481DC1B8391770050E5EF /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +152,10 @@
 		39401EE76700B7475AA7477F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				272481D61B8391770050E5EF /* Alamofire.framework */,
+				272481D71B8391770050E5EF /* Pods_frst.framework */,
+				272481D81B8391770050E5EF /* Pods.framework */,
+				272481D91B8391770050E5EF /* SwiftyJSON.framework */,
 				937F85F6FDE3B7FAFBB118D8 /* Pods.framework */,
 				1EDDFA7E8E8E4B6E46FE6470 /* Pods_frst.framework */,
 			);
@@ -254,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272481E01B83955A0050E5EF /* Assets.xcassets in Resources */,
 				279B3EDE1B8282D300FEEDA4 /* MainInterface.storyboard in Resources */,
 				2749F3361B83632F00435A1B /* GetURL.js in Resources */,
 			);
@@ -455,6 +469,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = frst/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kylefrost.frst;
@@ -472,6 +487,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = frst/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kylefrost.frst;
@@ -483,9 +499,15 @@
 		279B3EE41B8282D300FEEDA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				CODE_SIGN_ENTITLEMENTS = "frst-extension/frst-extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "frst-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kylefrost.frst.frst-extension";
@@ -498,9 +520,15 @@
 		279B3EE51B8282D300FEEDA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				CODE_SIGN_ENTITLEMENTS = "frst-extension/frst-extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "frst-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kylefrost.frst.frst-extension";

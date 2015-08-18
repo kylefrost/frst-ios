@@ -94,6 +94,7 @@
                     <size key="freeformSize" width="320" height="528"/>
                     <connections>
                         <outlet property="aliasField" destination="2oZ-mQ-CA4" id="B8g-yr-YU2"/>
+                        <outlet property="navBar" destination="NOA-Dm-cuz" id="T1z-zw-Hwf"/>
                         <outlet property="passwordField" destination="k2K-mK-34U" id="BLt-uD-Lds"/>
                         <outlet property="urlLabel" destination="48R-Yt-lL3" id="CEM-0h-mBD"/>
                         <outlet property="view" destination="zMn-AG-sqS" id="Qma-de-2ek"/>

@@ -11,8 +11,9 @@ import Alamofire
 import SwiftyJSON
 import MobileCoreServices
 
-class ActionViewController: UIViewController {
+class ActionViewController: UIViewController, UINavigationBarDelegate {
 
+    @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var urlLabel: UILabel!
     @IBOutlet weak var aliasField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -21,6 +22,8 @@ class ActionViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        self.navBar.delegate = self
         
         let extensionItem = extensionContext?.inputItems.first as! NSExtensionItem
         let itemProvider = extensionItem.attachments?.first as! NSItemProvider
@@ -43,6 +46,10 @@ class ActionViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func positionForBar(bar: UIBarPositioning) -> UIBarPosition {
+        return UIBarPosition.TopAttached
     }
 
     @IBAction func done() {
