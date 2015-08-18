@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="frst" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,86 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K8N-CY-qyW">
+                                <rect key="frame" x="176" y="210" width="248" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="KHl-jV-iGw"/>
+                                    <constraint firstAttribute="height" constant="30" id="lgH-xl-h6P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" keyboardAppearance="alert" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alias (Optional)" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Y7P-ji-95u">
+                                <rect key="frame" x="176" y="248" width="248" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="1dU-MR-Seo"/>
+                                    <constraint firstAttribute="height" constant="30" id="qqS-ZS-I7n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBI-FZ-fn3">
+                                <rect key="frame" x="256" y="323" width="88" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="F5t-na-JHb"/>
+                                    <constraint firstAttribute="width" constant="88" id="MmS-Wo-0jc"/>
+                                </constraints>
+                                <state key="normal" title="Shorten URL"/>
+                                <connections>
+                                    <action selector="didPressShortenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lvf-81-kde"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRST.XYZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSl-mB-VXU">
+                                <rect key="frame" x="208" y="71" width="185" height="66"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="5X9-ha-hMG"/>
+                                    <constraint firstAttribute="width" constant="185" id="iiS-MU-kPD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="45"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K53-ju-4Au">
+                                <rect key="frame" x="176" y="285" width="248" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="lEb-Sm-cxz"/>
+                                    <constraint firstAttribute="height" constant="30" id="yyl-0T-1AW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="go" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y7P-ji-95u" firstAttribute="top" secondItem="K8N-CY-qyW" secondAttribute="bottom" constant="8" id="9Ej-Su-Z2Q"/>
+                            <constraint firstItem="K53-ju-4Au" firstAttribute="top" secondItem="Y7P-ji-95u" secondAttribute="bottom" constant="7" id="G6y-JR-s3Y"/>
+                            <constraint firstItem="Y7P-ji-95u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RTU-BP-AKr"/>
+                            <constraint firstItem="K8N-CY-qyW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ugx-3y-QaJ"/>
+                            <constraint firstItem="eSl-mB-VXU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="bCW-Tj-owl"/>
+                            <constraint firstItem="K53-ju-4Au" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgx-fQ-dyJ"/>
+                            <constraint firstItem="eSl-mB-VXU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eOl-Fe-UB3"/>
+                            <constraint firstItem="BBI-FZ-fn3" firstAttribute="top" secondItem="K53-ju-4Au" secondAttribute="bottom" constant="8" id="fhl-SZ-ADk"/>
+                            <constraint firstItem="BBI-FZ-fn3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="khA-Uu-1Zc"/>
+                            <constraint firstItem="K8N-CY-qyW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="190" id="w72-8i-XcI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aliasField" destination="Y7P-ji-95u" id="yxr-ar-jwc"/>
+                        <outlet property="passwordField" destination="K53-ju-4Au" id="tDb-Z7-dsW"/>
+                        <outlet property="shortenButton" destination="BBI-FZ-fn3" id="YfK-iS-AF0"/>
+                        <outlet property="urlField" destination="K8N-CY-qyW" id="siQ-F0-Gi1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="228"/>
         </scene>
     </scenes>
 </document>
